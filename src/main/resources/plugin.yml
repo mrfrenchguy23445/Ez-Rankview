@@ -1,0 +1,32 @@
+name: Ez-RankView
+version: '${project.version}'
+main: com.ezrankview.EzRankView
+api-version: '1.21'
+depend: [LuckPerms]
+authors: [Ez-RankView]
+description: Preview LuckPerms ranks in-game without permanently changing permissions.
+website: https://github.com/
+
+commands:
+  rankview:
+    description: Preview a LuckPerms rank as yourself or another player.
+    usage: /rankview <group> [player] | stop [player] | list | reload
+    aliases: [rv, rankpreview]
+
+permissions:
+  ezrankview.use:
+    description: Preview a rank and list available groups.
+    default: op
+  ezrankview.others:
+    description: Apply or clear a rank preview for another player.
+    default: op
+  ezrankview.reload:
+    description: Reload the Ez-RankView configuration.
+    default: op
+  ezrankview.admin:
+    description: Grants every Ez-RankView permission.
+    default: op
+    children:
+      ezrankview.use: true
+      ezrankview.others: true
+      ezrankview.reload: true

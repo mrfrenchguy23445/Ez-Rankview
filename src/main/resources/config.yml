@@ -1,0 +1,48 @@
+# Ez-RankView
+# Preview a LuckPerms rank without permanently changing anything.
+# A "preview" only ADDS temporary nodes to the player (chat prefix/suffix and,
+# optionally, the group's permissions). The player's real data is never removed,
+# and every node that was added is removed again when the preview is stopped.
+
+preview:
+  # Also let the player inherit the previewed group's permissions while previewing.
+  # Set to false to only preview the visible chat tag.
+  apply-permissions: true
+
+  # Copy the previewed group's resolved prefix/suffix onto the player so the tag is
+  # actually visible (the player's own prefix would normally win).
+  apply-chat-meta: true
+
+  # Added to the previewed prefix/suffix priority so the preview takes precedence.
+  priority-offset: 1000
+
+  # Automatically expire the temporary preview nodes after this many seconds.
+  # This is a safety net: if the server crashes before a preview is stopped, the
+  # nodes clean themselves up on their own. It is intentionally generous so a
+  # long setup session is not interrupted. Set to 0 to keep the preview until it
+  # is stopped (no crash safety net).
+  expire-after-seconds: 3600
+
+  # Clear a player's preview automatically when they disconnect.
+  restore-on-quit: true
+
+messages:
+  prefix: '&8[&6Ez-RankView&8] &r'
+  no-permission: '&cYou do not have permission to do that.'
+  players-only: '&cOnly players can preview their own rank. Use &f/rankview <group> <player>&c.'
+  usage: '&eUsage: &f/rankview <group> [player]&7, &f/rankview stop [player]&7, &f/rankview list&7, &f/rankview reload'
+  player-not-found: '&cPlayer &f%player% &cis not online.'
+  group-not-found: '&cNo LuckPerms group named &f%group%&c.'
+  not-previewing: '&e%player% &7is not previewing a rank.'
+  started: '&aNow previewing &f%group%&a. Tag: &r%prefix%'
+  started-target: '&eAn admin started previewing &f%group% &efor you.'
+  switched: '&aSwitched preview to &f%group%&a. Tag: &r%prefix%'
+  stopped: '&7Stopped previewing &f%group%&7.'
+  stopped-target: '&eYour rank preview has been cleared.'
+  list-header: '&6LuckPerms groups:'
+  list-empty: '&7No groups are loaded.'
+  list-entry: '&7 - &f%group%'
+  sessions-header: '&6Active previews:'
+  session-entry: '&7 - &f%player% &7-> &f%group%'
+  reloaded: '&aEz-RankView configuration reloaded.'
+  error: '&cSomething went wrong: &f%error%'
