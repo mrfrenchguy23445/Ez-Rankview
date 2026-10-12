@@ -1,7 +1,7 @@
 # Ez-RankView
 # Preview a LuckPerms rank without permanently changing anything.
-# A "preview" only ADDS temporary nodes to the player (chat prefix/suffix and,
-# optionally, the group's permissions). The player's real data is never removed,
+# A "preview" only ADDS temporary nodes to the player (chat prefix/suffix and
+# the group's permissions). The player's real data is never removed,
 # and every node that was added is removed again when the preview is stopped.
 
 preview:
