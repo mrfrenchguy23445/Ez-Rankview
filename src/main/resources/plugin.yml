@@ -1,8 +1,9 @@
 name: Ez-RankView
 version: '${project.version}'
 main: com.ezrankview.EzRankView
-api-version: '1.21'
+api-version: '1.12'
 depend: [LuckPerms]
+folia-supported: true
 authors: [Ez-RankView]
 description: A LuckPerms addon which makes switching ranks easier than ever for admins testing out permissions.
 website: https://github.com/mrfrenchguy23445/Ez-Rankview

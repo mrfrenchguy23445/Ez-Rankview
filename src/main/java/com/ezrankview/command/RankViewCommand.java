@@ -239,6 +239,9 @@ public final class RankViewCommand implements CommandExecutor, TabCompleter {
     }
 
     private void main(Runnable task) {
+        // Use Bukkit scheduler (works on Bukkit/Spigot/Paper). For Folia users, most commands
+        // run from command sender context; command execution is fine. The scheduler here is
+        // only used to jump back to the main thread after async LuckPerms calls.
         plugin.getServer().getScheduler().runTask(plugin, task);
     }
 
