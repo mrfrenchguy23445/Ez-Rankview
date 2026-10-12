@@ -1,16 +1,17 @@
 # Ez-RankView
 
 [![Build](https://github.com/mrfrenchguy23445/Ez-Rankview/actions/workflows/build.yml/badge.svg)](https://github.com/mrfrenchguy23445/Ez-Rankview/actions/workflows/build.yml)
-![Minecraft](https://img.shields.io/badge/Minecraft-1.21.x-62b47a?style=flat-square)
-![Server](https://img.shields.io/badge/Server-Purpur%20%7C%20Paper-blue?style=flat-square)
+![Minecraft](https://img.shields.io/badge/Minecraft-1.12%20%2B-62b47a?style=flat-square)
+![Server](https://img.shields.io/badge/Server-Bukkit%20%7C%20Spigot%20%7C%20Paper%20%7C%20Purpur%20%7C%20Folia-blue?style=flat-square)
 ![Java](https://img.shields.io/badge/Java-21%2B-orange?style=flat-square)
 ![License](https://img.shields.io/badge/License-MIT-yellow?style=flat-square)
 ![LuckPerms](https://img.shields.io/badge/Requires-LuckPerms-4c8bf5?style=flat-square)
 
 A LuckPerms addon which makes switching ranks easier than ever for admins testing out
-permissions, for **Purpur / Paper 1.21.x**. It lets staff preview a rank without permanently
-changing anyone's permissions — perfect for checking how a new rank will look, or for
-switching a player between ranks to compare them.
+permissions, supporting **Bukkit, Spigot, Paper, Purpur and Folia** from **1.12 through
+the latest versions**. It lets staff preview a rank without permanently changing anyone's
+permissions — perfect for checking how a new rank will look, or for switching a player
+between ranks to compare them.
 
 A preview:
 
@@ -39,9 +40,9 @@ expiry (configurable) so a crashed server cleans up after itself.
 
 | Thing     | Version                         |
 |-----------|---------------------------------|
-| Server    | Purpur / Paper 1.21.x           |
-| Java      | 21+                             |
-| LuckPerms | installed and running (any 5.x) |
+| Server    | Bukkit, Spigot, Paper, Purpur, Folia (1.12 – 1.21.x / modern) |
+| Java      | 21+ (for building; runs on Java 8+ depending on server)        |
+| LuckPerms | installed and running (any 5.x)                               |
 
 ## Building
 
