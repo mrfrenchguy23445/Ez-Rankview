@@ -1,7 +1,6 @@
 name: Ez-RankView
 version: '${project.version}'
 main: com.ezrankview.EzRankView
-api-version: '1.12'
 depend: [LuckPerms]
 folia-supported: true
 authors: [Ez-RankView]
