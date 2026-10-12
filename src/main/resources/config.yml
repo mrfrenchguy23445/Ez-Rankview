@@ -5,8 +5,8 @@
 # and every node that was added is removed again when the preview is stopped.
 
 preview:
-  # Also let the player inherit the previewed group's permissions while previewing.
-  # Set to false to only preview the visible chat tag.
+  # Permissions are always applied when previewing a rank. This option is kept
+  # for backwards compatibility but has no effect.
   apply-permissions: true
 
   # Copy the previewed group's resolved prefix/suffix onto the player so the tag is

@@ -121,6 +121,11 @@ public final class PreviewManager {
         List<Node> nodes = new ArrayList<>();
         int offset = config.priorityOffset();
 
+        // Always apply the group's permissions when previewing.
+        InheritanceNode.Builder inherit = InheritanceNode.builder(group.getName().toLowerCase(Locale.ROOT));
+        withExpiry(inherit, expireSeconds);
+        nodes.add(inherit.build());
+
         if (config.applyChatMeta()) {
             CachedMetaData meta = group.getCachedData().getMetaData();
 
@@ -141,12 +146,6 @@ public final class PreviewManager {
                 withExpiry(builder, expireSeconds);
                 nodes.add(builder.build());
             }
-        }
-
-        if (config.applyPermissions()) {
-            InheritanceNode.Builder builder = InheritanceNode.builder(group.getName().toLowerCase(Locale.ROOT));
-            withExpiry(builder, expireSeconds);
-            nodes.add(builder.build());
         }
 
         return nodes;

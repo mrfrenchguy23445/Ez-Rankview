@@ -17,7 +17,7 @@ A preview:
 
 - copies the target group's **resolved prefix / suffix** onto the player so the chat tag is
   actually visible, and
-- (optionally) grants the group's **permissions** while the preview is active.
+- grants the group's **permissions** while the preview is active.
 
 It is **purely additive** — the player's existing groups and nodes are never touched. Every
 node that is added is removed again when the preview stops. Temporary nodes also carry an
@@ -88,7 +88,6 @@ Previewing a different group while one is active **switches** to the new group a
 
 ```yaml
 preview:
-  apply-permissions: true      # also preview the group's permissions
   apply-chat-meta: true        # copy the group's prefix/suffix so the tag shows
   priority-offset: 1000        # priority bump so the preview outranks your real prefix
   expire-after-seconds: 3600   # crash-safety expiry for the temp nodes (0 = until stopped)
@@ -105,7 +104,7 @@ When a preview starts it:
 
 1. reads the resolved prefix/suffix of the target group from its cached metadata,
 2. adds matching `prefix`/`suffix` nodes to the player at a higher priority,
-3. optionally adds a temporary `group.<name>` inheritance node for permissions, and
+3. adds a temporary `group.<name>` inheritance node so the player gets the previewed rank's permissions, and
 4. remembers the exact nodes it added.
 
 Stopping the preview removes exactly those nodes. Nothing else about the player's data is
