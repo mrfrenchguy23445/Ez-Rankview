@@ -3,7 +3,7 @@ version: '${project.version}'
 main: com.ezrankview.EzRankView
 depend: [LuckPerms]
 folia-supported: true
-authors: [Ez-RankView]
+authors: [French]
 description: A LuckPerms addon which makes switching ranks easier than ever for admins testing out permissions.
 website: https://github.com/mrfrenchguy23445/Ez-Rankview
 

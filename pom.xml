@@ -13,6 +13,12 @@
     <url>https://github.com/mrfrenchguy23445/Ez-Rankview</url>
     <description>A LuckPerms addon which makes switching ranks easier than ever for admins testing out permissions.</description>
 
+    <developers>
+        <developer>
+            <name>French</name>
+        </developer>
+    </developers>
+
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>21</java.version>
