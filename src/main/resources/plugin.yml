@@ -4,8 +4,8 @@ main: com.ezrankview.EzRankView
 api-version: '1.21'
 depend: [LuckPerms]
 authors: [Ez-RankView]
-description: Preview LuckPerms ranks in-game without permanently changing permissions.
-website: https://github.com/
+description: A LuckPerms addon which makes switching ranks easier than ever for admins testing out permissions.
+website: https://github.com/mrfrenchguy23445/Ez-Rankview
 
 commands:
   rankview:

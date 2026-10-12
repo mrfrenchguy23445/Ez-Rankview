@@ -10,7 +10,8 @@
     <packaging>jar</packaging>
 
     <name>Ez-RankView</name>
-    <description>Preview LuckPerms ranks in-game without permanently changing your permissions.</description>
+    <url>https://github.com/mrfrenchguy23445/Ez-Rankview</url>
+    <description>A LuckPerms addon which makes switching ranks easier than ever for admins testing out permissions.</description>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

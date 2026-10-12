@@ -18,5 +18,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Safety cleanup on logout, on plugin disable, and via a configurable node expiry.
 - Fully configurable `config.yml` with a messages section.
 
-[Unreleased]: https://github.com/your-org/Ez-RankView/compare/v1.0.0...HEAD
-[1.0.0]: https://github.com/your-org/Ez-RankView/releases/tag/v1.0.0
+[Unreleased]: https://github.com/mrfrenchguy23445/Ez-Rankview/compare/v1.0.0...HEAD
+[1.0.0]: https://github.com/mrfrenchguy23445/Ez-Rankview/releases/tag/v1.0.0

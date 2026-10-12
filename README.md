@@ -1,14 +1,16 @@
 # Ez-RankView
 
+[![Build](https://github.com/mrfrenchguy23445/Ez-Rankview/actions/workflows/build.yml/badge.svg)](https://github.com/mrfrenchguy23445/Ez-Rankview/actions/workflows/build.yml)
 ![Minecraft](https://img.shields.io/badge/Minecraft-1.21.x-62b47a?style=flat-square)
 ![Server](https://img.shields.io/badge/Server-Purpur%20%7C%20Paper-blue?style=flat-square)
 ![Java](https://img.shields.io/badge/Java-21%2B-orange?style=flat-square)
 ![License](https://img.shields.io/badge/License-MIT-yellow?style=flat-square)
 ![LuckPerms](https://img.shields.io/badge/Requires-LuckPerms-4c8bf5?style=flat-square)
 
-A small **LuckPerms addon** for **Purpur / Paper 1.21.x** that lets staff preview a rank
-without permanently changing anyone's permissions — perfect for checking how a new rank
-will look, or for switching a player between ranks to compare them.
+A LuckPerms addon which makes switching ranks easier than ever for admins testing out
+permissions, for **Purpur / Paper 1.21.x**. It lets staff preview a rank without permanently
+changing anyone's permissions — perfect for checking how a new rank will look, or for
+switching a player between ranks to compare them.
 
 A preview:
 
